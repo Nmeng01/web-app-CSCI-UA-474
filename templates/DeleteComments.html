@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NYU Computer Science Course List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/general.css') }}">
+</head>
+<body>
+    <h1>NYU CS Course List</h1>
+    <div class="container">
+        <a href="/"><button class="button">Home Page</button></a>
+        <a href="/course_search"><button class="button">Course List</button></a>
+        <a href="/view_comments"><button class="button">All Comments</button></a>
+       
+    </div>
+    <h3>Are you sure you want to delete</h3>
+    <li>{{data.articleTitle}}</li>
+           <li>{{data.classNumber}}</li>
+       <li>{{data.schedule}}</li>
+
+    <li> {{data.name}}</li>
+    <li>{{data.text}}</li>
+
+    <a href=/view_comments><button class="button">Cancel</button></a>
+    <button class="button" onclick="sendDeleteRequest()"> Delete </button>
+
+    <script>
+        function sendDeleteRequest() {
+        console.log('Here');
+            fetch(window.location.href, {
+                method: 'DELETE'
+            })
+          .then(data => {
+                window.location.href = '/view_comments';
+            })
+        }
+    </script>
+    </div>
+</body>
+</html>

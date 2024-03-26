@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NYU Computer Science Course List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/general.css') }}">
+</head>
+
+<body>
+    <h1>NYU CS Course List</h1>
+    <div class="container">
+        <a href="/"><button class="button">Home Page</button></a>
+        <a href="/course_search"><button class="button">Course List</button></a>
+        <a href="/view_comments"><button class="button">All Comments</button></a>
+           
+    </div>
+
+    <div class="container">   
+        <ul style="display: inline-block; text-align: left; margin: 10px;">
+            <li>{{data.classTitle}}</li>
+            <li>{{data.classNumber}}</li>
+            <li>{{data.schedule}}</li>
+            <li>{{data.notes}}</li>
+        </ul>
+    </div>    
+
+   <h3>Comments</h3>
+    
+    <ul style="display: inline-block; text-align: left; margin: 10px;">
+        {% for comment in  comments%}
+        <li style="margin: 8px;">
+          <div>
+              <b>{{comment.name}}</b>
+          </div>
+           <div>
+              {{comment.text}}
+          </div>
+        </li> 
+        {% endfor %}
+    </ul>
+
+    <h3>Add Comment</h3>
+
+    <form id="commentForm" action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br>
+
+ 
+        <button type="submit" class="button"">Submit</button>
+    </form>
+</body>
+</html>
