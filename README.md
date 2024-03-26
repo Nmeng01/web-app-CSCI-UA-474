@@ -8,9 +8,9 @@ Creating an NYU Computer Science Course Search app that helps curate student aca
 
 ## User stories
 
-For a detailed view of our user stories and to track our progress, visit our [Issues page](https://github.com/software-students-spring2024/2-web-app-exercise-team-snbn/issues?q=label:user-story)
+For a detailed view of our user stories and to track our progress, visit our [Issues page](https://github.com/Nmeng01/web-app-CSCI-UA-474/issues)
 
 ## Task boards
 
-[Sprint 1 Taskboard](https://github.com/orgs/software-students-spring2024/projects/8/views/1)
-[Sprint 2 Taskboard](https://github.com/orgs/software-students-spring2024/projects/32/views/1)
+[Sprint 2 Taskboard](https://github.com/users/Nmeng01/projects/3/views/1)
+[Sprint 2 Taskboard](https://github.com/users/Nmeng01/projects/2/views/1)
