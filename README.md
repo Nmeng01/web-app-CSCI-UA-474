@@ -12,5 +12,5 @@ For a detailed view of our user stories and to track our progress, visit our [Is
 
 ## Task boards
 
-[Sprint 2 Taskboard](https://github.com/users/Nmeng01/projects/3/views/1)
+[Sprint 1 Taskboard](https://github.com/users/Nmeng01/projects/3/views/1)
 [Sprint 2 Taskboard](https://github.com/users/Nmeng01/projects/2/views/1)
